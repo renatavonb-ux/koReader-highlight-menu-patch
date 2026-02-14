@@ -38,7 +38,7 @@ function ReaderHighlight:init()
 		
         ["02_highlight"] = function(this)
             return {
-                icon = _("icon_name"), --- put icon in resources/icons/mdlight
+                icon = _("orange"), --- put icon in resources/icons/mdlight
                 enabled = this.hold_pos ~= nil,
                 callback = function()
                     this:saveHighlightFormatted(true,"lighten","orange")
@@ -52,7 +52,7 @@ function ReaderHighlight:init()
         end,
 		["03_highlight"] = function(this)
             return {
-                text = _("🍌"),
+                icon = _("pear"),
                 enabled = this.hold_pos ~= nil,
                 callback = function()
                     this:saveHighlightFormatted(true,"lighten","yellow")
@@ -66,50 +66,17 @@ function ReaderHighlight:init()
         end,
         ["04_highlight"] = function(this)
             return {
-                icon = _("icon_name"), 
+                icon = _("kiwi"), 
                 enabled = this.hold_pos ~= nil,
                 callback = function()
                     this:saveHighlightFormatted(true,"lighten","green")
                     this:onClose()
                 end,
             }
-        end,
-        ["05_highlight"] = function(this)
-            return {
-                text = _("🫒"),
-                enabled = this.hold_pos ~= nil,
-                callback = function()
-                    this:saveHighlightFormatted(true,"lighten","olive")
-                    this:onClose()
-                end,
-            }
-        end,
-	
-        ["06_highlight"] = function(this)
-            return {
-                text = _("cyan"),
-                enabled = this.hold_pos ~= nil,
-                callback = function()
-                    this:saveHighlightFormatted(true,"lighten","cyan")
-                    this:onClose()
-                end,
-            }
-        end,
-        
-        ["07_highlight"] = function(this)
-            return {
-                text = _("blue"),
-                enabled = this.hold_pos ~= nil,
-                callback = function()
-                    this:saveHighlightFormatted(true,"lighten","blue")
-                    this:onClose()
-                end,
-            }
-        end,
-        -- 
+		
         ["8_highlight"] = function(this)
             return {
-                text = _("🍇"),
+                icon = _("grape"),
                 enabled = this.hold_pos ~= nil,      
                 callback = function()
                     this:saveHighlightFormatted(true,"lighten","purple")
